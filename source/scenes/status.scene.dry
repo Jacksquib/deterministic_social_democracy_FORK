@@ -25,7 +25,7 @@ Resources available: [+ resources +]
 
 [? if bruning_time and spd_toleration: Bruning's reichstag backing: [+ bruning_coalition +]% ?]
 
-[? if bruning_time and president == "Hindenburg": Hindenburg's approval: [+ hindenburg_angry_bruning : hindenburg_angry_bruning +] ?]
+[? if bruning_time and president == "Hindenburg": Hindenburg's approval: [+ hindenburg_angry_bruning : hindenburg_angry_bruning +] [+ hindenburg_angry_bruning +] ?]
 
 [? if spd_government_burden_seen: Government Goals: [? if goal_spd_cancel == 0: [+ goal_spd_total +]?][? if goal_spd_cancel >= 1: Failed?] / 2 completed, due in [+ spd_government_burden_timer +] months ?]
 
@@ -36,11 +36,11 @@ Prussian government: [? if spd_prussia : in government - ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spd_in_government and president == "Hindenburg" : Hindenburg's approval: [+ hindenburg_angry : hindenburg_angry +] ?]
+[? if spd_in_government and president == "Hindenburg" : Hindenburg's approval: [+ hindenburg_angry : hindenburg_angry +] [+ hindenburg_angry+]?]
 
 [? if spd_in_government and (in_left_front or in_popular_front): <span style="color: #700000;">**KPD**</span> coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
+Internal dissent: [+ dissent_percent : dissent +] [+ dissent_percent +]
 
 = Government
 
@@ -137,7 +137,7 @@ Next Prussian election: [? if prussia_leader != "Papen" and prussia_leader != "S
 = Party
 
 Resources available: [+ resources +]<br>
-Internal dissent: [+ dissent_percent : dissent +]<br>
+Internal dissent: [+ dissent_percent : dissent +] [+ dissent_percent +] <br>
 Support for the Republic: [+ pro_republic_disp +]%<br>
 [? if red_general_unlock: <span style="color: #c00000;">**SPD**</span> stance on [? if chancellor == "Schleicher" or not schleicher_post: Schleicher?][? if chancellor != "Schleicher" and schleicher_post: the State?]: [+ schleicher_spd_support : schleicher_spd_2 +]<br> ?]
 [? if schleicher_spd_influence and schleicher_time >= 8: [? if chancellor == "Schleicher": Schleicher?][? if chancellor != "Schleicher" and schleicher_post: The State?]'s influence in <span style="color: #c00000;">**SPD**</span>: [+ schleicher_spd_influence : schleicher_spd_3 +]<br> ?]

@@ -36,7 +36,7 @@ Prussian government: [? if spd_prussia : in government - ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spd_in_government and president == "Hindenburg" : Hindenburg's approval: [+ hindenburg_angry : hindenburg_angry +] [+ hindenburg_angry+]?]
+[? if spd_in_government and president == "Hindenburg" : Hindenburg's approval: [+ hindenburg_angry : hindenburg_angry +] [+ hindenburg_angry +]?]
 
 [? if spd_in_government and (in_left_front or in_popular_front): <span style="color: #700000;">**KPD**</span> coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
@@ -360,7 +360,9 @@ Q.socialism_disp = Math.round(Q.socialism);
 **Others**: [+ other_votes +]%
 
 Support for the Republic: [+ pro_republic_disp +]%
+
 Support for <span style="color: #3E88B3;">**Nationalism**</span>: [+ nationalism_disp +]%
+
 Support for <span style="color: #9B0000;">**Socialism**</span>: [+ socialism_disp +]%
 
 

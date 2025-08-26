@@ -1,6 +1,6 @@
 
-(..30) satisfied
-(30..50) pleased
-(50..70) adequate
-(70..100) waning
-(100..) crashing out
+(..30) satisfied [+ hindenburg_angry +]
+(30..50) pleased [+ hindenburg_angry +]
+(50..70) adequate [+ hindenburg_angry +]
+(70..100) waning [+ hindenburg_angry +]
+(100..) crashing out [+ hindenburg_angry +]

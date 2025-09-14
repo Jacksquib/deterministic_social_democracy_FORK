@@ -181,6 +181,7 @@ Q.left_dissent_disp = Math.round(Q.left_dissent);
 Q.labor_dissent_disp = Math.round(Q.labor_dissent);
 Q.center_dissent_disp = Math.round(Q.center_dissent);
 !}
+
 = Inter-party Relations
 
 [? if dnef_formed: <span class="tooltip-text" title="German National Unity Front" style="color: #BFC8CC;">**DNEF**</span>: [+ dnef_relation : relationships +] [+dnef_relation_disp +?] 

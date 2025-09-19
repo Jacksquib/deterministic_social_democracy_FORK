@@ -17,12 +17,12 @@ if (Q.nationalization_adopted || Q.economic_democracy) {
     Q.cvp_right += Q.economic_democracy*2;
 }
 
-Q.labor_right_points = 0;
-Q.conservative_right_points = 0;
-Q.catholic_center_points = 0;
-Q.agrarian_right_points = 0;
-Q.tory_democratic_points = 0;
-Q.labor_left_points = 0;
+Q.labor_right_points = 20;
+Q.conservative_right_points = -20;
+Q.catholic_center_points = -10;
+Q.agrarian_right_points = -20;
+Q.tory_democratic_points = 50;
+Q.labor_left_points = 150;
 
 Q.labor_points_lead = 0; 
 Q.democratic_points_lead = 0;

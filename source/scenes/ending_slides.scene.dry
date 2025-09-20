@@ -22,20 +22,18 @@ if (Q.weimar_win && (Q.president == "Rosenfeld" || Q.president == "Thälmann" ||
   Q.kpd_points = 0;
   Q.kpd_points += Q.rfb_force;
   Q.kpd_points += (100 - Q.pro_republic) / 2;
-  Q.kpd_points += Q.unemployed / 2;
   Q.kpd_points += Q.kpd_votes;
-  Q.kpd_points += Q.soviet_relation;
   if (Q.president == "Thälmann") Q.kpd_points += 16;
   if (Q.president == "Münzenberg") Q.kpd_points += 10;
   if (Q.kpd_leader == "Conciliators") Q.kpd_points += 6;
   if (Q.sapd_formed) {
-    Q.kpd_points += 2;
-    Q.kpd_points += Q.sapd_votes;
+    Q.kpd_points -= 2;
+    Q.kpd_points -= Q.sapd_votes;
   }
   if (Q.spd_votes < 26) Q.kpd_points += 5;
-  if (Q.eu) Q.kpd_points -= 10;
-  if (Q.spd_votes >= 36) Q.kpd_points -= 5;
-  if (Q.spd_votes >= 40) Q.kpd_points -= 5;
+  if (Q.eu) Q.kpd_points -= 20;
+  if (Q.spd_votes >= 36) Q.kpd_points -= 10;
+  if (Q.spd_votes >= 40) Q.kpd_points -= 20;
 
   if (Q.kpd_points >= 50) {
     Q.kpd_win = 1;
